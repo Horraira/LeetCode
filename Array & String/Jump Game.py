@@ -4,7 +4,6 @@ class Solution:
     def canJump(self, nums:List[int]) -> bool:
         goal = len(nums)
         for i in range(len(nums)-1, -1, -1):
-            print(i, nums[i], goal)
             if i + nums[i] >= goal:
                 goal = i
         return goal == 0
